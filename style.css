@@ -110,11 +110,13 @@ body{
     z-index: -1;
 }
 @media only screen and (max-width:480px){
+    .search-bar{
+        flex-basis:content;
+    }
     .search input{
         height: 30px;
         font-size: 14px;
-        margin-right: 0;
-        padding:10px 10px;
+        margin-right: 10px;
         padding: 5px 15px;
     }
     .search button{
