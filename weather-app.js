@@ -7,7 +7,7 @@ const searchBox = document.querySelector(".search input");
 const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
-async function checkWeather(desitnation=75085){
+async function checkWeather(desitnation="Jersey City"){
     if(desitnation>0){
         const response = await fetch(apiUrl2 +desitnation+",us"+`&appid=${apiKey}`);
         if(response.status == 404){
